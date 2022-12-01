@@ -1,0 +1,50 @@
+.titre {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    padding: 3%;
+    font-weight:bolder;
+    font-size: 300%;
+
+}
+
+.titre_photo{
+    float: left;
+    margin-right: 5%;
+    clip-path: circle(40%);
+    
+}
+
+.titre_texte {
+    float: right;
+
+}
+
+.bar_nav_rapide{ 
+    color: red;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    background-color: bisque;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.barnav_elem {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(255, 199, 131);
+}
+.barnav_elem_left_bordered {
+    border-radius: 25px 0px 0px 25px;
+}
+.barnav_elem_right_bordered {
+    border-radius: 0px 25px 25px 0px;
+}
