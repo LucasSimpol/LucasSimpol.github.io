@@ -48,3 +48,43 @@ a {
 .barnav_elem_right_bordered {
     border-radius: 0px 25px 25px 0px;
 }
+
+
+.a_propo_de_moi{
+    background-color: bisque;
+    font-family: "Calibri";
+}
+
+.text_about_myself {
+    text-align: center;
+    font-size: large;
+}
+
+.mes_competance {
+    background-color: white;
+    font-family: "Calibri"
+}
+
+.text_about_my_skills {
+    text-align: center;
+    font-size: large;
+}
+
+
+.mon_parcoure {
+    background-color: bisque;
+    font-family: "Calibri"
+}
+.text_on_my_route{
+    text-align: center;
+    font-size: large;
+}
+
+.me_contacte {
+    background-color: white;
+    font-family: "Calibri"
+}
+.contact_me {
+    text-align: center;
+    font-size: large;
+}
