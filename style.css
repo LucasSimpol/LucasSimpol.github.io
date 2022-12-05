@@ -1,38 +1,42 @@
+/* DOM elements */
+a {
+    text-decoration: none;
+    color :black;
+    
+}
+a:hover {
+    color : red; 
+    background-color: rgb(255, 184, 97)
+}
+/*Class elements*/
+
 .titre {
     display : flex;
     justify-content: center;
     align-items: center;
     background-color: bisque;
-    padding: 3%;
+    padding: 6%;
     font-weight:bolder;
     font-size: 300%;
-
 }
 
 .titre_photo{
     float: left;
     margin-right: 5%;
     clip-path: circle(40%);
-    
 }
 
 .titre_texte {
     float: right;
-
 }
 
-.bar_nav_rapide{ 
-    color: red;
+.bar_nav_rapide{
     display : flex;
     justify-content: center;
     align-items: center;
-    font-size: 200%;
+    font-size: 150%;
     background-color: bisque;
-}
-
-
-a {
-    text-decoration: none;
+    
 }
 
 .barnav_elem {
@@ -49,9 +53,8 @@ a {
     border-radius: 0px 25px 25px 0px;
 }
 
-
-.a_propo_de_moi{
-    background-color: bisque;
+.a_propos_de_moi{
+    background-color: white;
     font-family: "Calibri";
 }
 
@@ -60,8 +63,8 @@ a {
     font-size: large;
 }
 
-.mes_competance {
-    background-color: white;
+.mes_competence {
+    background-color: bisque;
     font-family: "Calibri"
 }
 
@@ -71,8 +74,8 @@ a {
 }
 
 
-.mon_parcoure {
-    background-color: bisque;
+.mon_parcours {
+    background-color: white;
     font-family: "Calibri"
 }
 .text_on_my_route{
@@ -81,10 +84,25 @@ a {
 }
 
 .me_contacte {
-    background-color: white;
+    background-color: bisque;
     font-family: "Calibri"
 }
 .contact_me {
     text-align: center;
     font-size: large;
 }
+
+
+
+
+
+
+
+
+/*  
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    bar de nav fix en haut de page
+*/
