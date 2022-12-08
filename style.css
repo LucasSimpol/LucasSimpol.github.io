@@ -92,9 +92,37 @@ a:hover {
     font-size: large;
 }
 
+/* Table avec mot parcours */
+.tab_parcours {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;   
+    text-align: center;
+    width: 70%;
+}
+.style_tab_tête{
+    background-color:rgb(255, 199, 131);
+    border-style: outset; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.style_tab {
+    background-color:rgb(255, 199, 131);
+    border-style: outset; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 50%;
+}
 
-
-
+.tab_parcours_espace {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
 
 
 
