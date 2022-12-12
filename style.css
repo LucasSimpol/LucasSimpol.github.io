@@ -96,12 +96,10 @@ a:hover {
 
 /* Css pour le block de presantation de mon parcours profésionnel de ma formation */
 .tab_parcours {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 2%;
-    padding-right: 2%;   
+    padding: 2% 2% 2% 2%;
     text-align: center;
     width: 70%;
+    height: fit-content;
 }
 .style_tab_tête{
     background-color:rgb(255, 199, 131);
@@ -113,20 +111,23 @@ a:hover {
     width: 30%
 
 }
+
+.style_tab {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    min-width: 30%;
+}
+
 .style_tab:hover {
     background-color: rgb(255, 171, 69);
     border-style: inset; 
 }
 
-.tab_parcours_espace {
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-/* fin du Css pour le block de presantation de mon parcours profésionnel de ma formation */
+/* fin du Css pour le block de presentation de mon parcours professionnel de ma formation */
 
 
 
-
+/*Pourquoi ce block en dessous ? Une future tentative ?*/
 /*  
     position: fixed;
     top: 0;
@@ -187,4 +188,4 @@ a:hover {
     opacity: 1;
 } 
 
-/* fin des les bulle information de mon parcour profésionnel et de ma formation */
+/* fin des les bulle information de mon parcour professionnel et de ma formation */
