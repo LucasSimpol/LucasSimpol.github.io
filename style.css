@@ -15,14 +15,14 @@ a:hover {
     justify-content: center;
     align-items: center;
     background-color: bisque;
-    padding: 6%;
+    padding: 4%;
     font-weight:bolder;
     font-size: 300%;
 }
 
 .titre_photo{
     float: left;
-    margin-right: 5%;
+    margin-right: 3%;
     clip-path: circle(40%);
 }
 
@@ -76,11 +76,13 @@ a:hover {
 
 .mon_parcours {
     background-color: white;
-    font-family: "Calibri"
+    font-family: "Calibri";
 }
 .text_on_my_route{
     text-align: center;
-    font-size: large;
+    font-size: 150%;
+    font-weight:bolder;
+    text-decoration: underline;
 }
 
 .me_contacte {
@@ -92,7 +94,7 @@ a:hover {
     font-size: large;
 }
 
-/* Table avec mot parcours */
+/* Css pour le block de presantation de mon parcours profésionnel de ma formation */
 .tab_parcours {
     padding-top: 1%;
     padding-bottom: 1%;
@@ -108,21 +110,19 @@ a:hover {
     padding-bottom: 1%;
     padding-left: 2%;
     padding-right: 2%;
+    width: 30%
+
 }
-.style_tab {
-    background-color:rgb(255, 199, 131);
-    border-style: outset; 
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-    border-radius: 50%;
+.style_tab:hover {
+    background-color: rgb(255, 171, 69);
+    border-style: inset; 
 }
 
 .tab_parcours_espace {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
+/* fin du Css pour le block de presantation de mon parcours profésionnel de ma formation */
 
 
 
@@ -134,3 +134,57 @@ a:hover {
 
     bar de nav fix en haut de page
 */
+
+
+
+/* les bulle information de mon parcour profésionnel et de ma formation */
+ /* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    background-color:rgb(255, 199, 131);
+    border-style: outset; 
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 50%;
+    width: 90%
+}
+    
+    /* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100%;
+    background-color: lightgrey;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 1px 0;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 50%;
+    margin-left: -50%;
+}
+    
+    /* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+    
+    /* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+} 
+
+/* fin des les bulle information de mon parcour profésionnel et de ma formation */
