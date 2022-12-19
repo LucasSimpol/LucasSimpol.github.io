@@ -63,7 +63,7 @@ a:hover {
     font-size: large;
 }
 
-.mes_competence {
+#mes_competence {
     background-color: bisque;
     font-family: "Calibri"
 }
@@ -74,7 +74,7 @@ a:hover {
 }
 
 
-.mon_parcours {
+#mon_parcours {
     background-color: white;
     font-family: "Calibri";
 }
@@ -85,7 +85,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.me_contacte {
+#me_contacte {
     background-color: bisque;
     font-family: "Calibri"
 }
