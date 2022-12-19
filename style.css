@@ -127,7 +127,7 @@ a:hover {
 
 
 
-/*Pourquoi ce block en dessous ? Une future tentative ?*/
+/*Pourquoi ce block en dessous ? Une future tentative ?    Oui, elle permet de rende la bar de navigation fixe en haut d'écran mais il faut que je regarde plus en profondeur car le permier test ne ma pas plus*/
 /*  
     position: fixed;
     top: 0;
