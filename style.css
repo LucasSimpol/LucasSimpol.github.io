@@ -83,22 +83,48 @@ a:hover {
     background-color: white;
     font-family: "Calibri";
 }
-.text_on_my_route{
+.my_route_title{
     text-align: center;
-    font-size: 150%;
+    font-size: 2%;
     font-weight:bolder;
     text-decoration: underline;
-    padding-top: 5%;
+    padding-top: 2%;
+    font-size: 200%;
 }
 
-.text_about_my_project {
-    text-align: center;
-    font-size: large;
+/* parti présentation de mes projet */
+
+.my_project {
     background-color: bisque;
     font-family: "Calibri";
-    padding-top: 10%;
-    padding-bottom: 10%;
 }
+
+.Project_title {
+    text-align: center;
+    font-size: 2%;
+    font-weight:bolder;
+    text-decoration: underline;
+    padding-top: 2%;
+    font-size: 200%;
+}
+
+.Project_Name {
+    text-align: center;
+    font-size: 2%;
+    font-weight:bolder;
+    text-decoration: underline;
+    padding-top: 4%;
+    font-size: 150%;
+}
+
+.text_for_the_presentation_of_my_project {
+    padding-top: 5%;
+    
+}
+
+
+/* fin de la parti présentation de mes projet */
+
 
 .contact_me {
     text-align: center;
@@ -124,7 +150,8 @@ a:hover {
     padding-bottom: 1%;
     padding-left: 2%;
     padding-right: 2%;
-    width: 30%
+    width: 30%;
+    font-size: 150%;
 
 }
 
