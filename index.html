@@ -18,7 +18,7 @@
                 Lucas Simpol-Augeray
             </header>
         </div>
-        <div class="bar_nav_rapide">
+        <div id="navbar" class="bar_nav_rapide">
             <table>
                 <tr> <a href="#a_propos_de_moi" class="barnav_elem barnav_elem_left_bordered">a propos de moi</a> </tr>
                 <tr> <a href="#mes_competences" class="barnav_elem">mes compétences</a> </tr>
@@ -27,115 +27,136 @@
                 <tr> <a href="#me_contacter" class="barnav_elem barnav_elem_right_bordered">me contacter</a> </tr>
             </table>
         </div>
-        <div id="a_propos_de_moi">
-            <div class="text_about_myself" width="10%"> 
-                Originaire du nord <i>(59)</i> je vie actuellement dans l'Héraut <i>(34)</i><br><br>
-                
-                Je suis actuellement en cours d'obtention d'un Bachelor Universitaire de Technologie au sein de <a href="https://www.iutbeziers.fr/">l'IUT de Béziers.</a>
-                Intéressé depuis toujours dans l'informatique principalement dans le domaine des communications, je souhaite continuer dans cette voie pour me spécialiser dans ce domaine.
-                <!-- toujour en cour de travail-->
+        <main id="content">
+            <div id="a_propos_de_moi">
+                <div class="text_about_myself" width="10%"> 
+                    Originaire du nord <i>(59)</i> je vie actuellement dans l'Héraut <i>(34)</i><br><br>
+                    
+                    Je suis actuellement en cours d'obtention d'un Bachelor Universitaire de Technologie au sein de <a href="https://www.iutbeziers.fr/">l'IUT de Béziers.</a>
+                    Intéressé depuis toujours dans l'informatique principalement dans le domaine des communications, je souhaite continuer dans cette voie pour me spécialiser dans ce domaine.
+                    <!-- toujour en cour de travail-->
+                </div>
             </div>
-        </div>
 
-        <div id="mes_competences">
-            <div class="text_about_my_skills"> 
-                en construction 
+            <div id="mes_competences">
+                <div class="text_about_my_skills"> 
+                    en construction 
+                </div>
             </div>
-        </div>
-        
-        <div id="mon_parcours">
-            <div class="my_route_title"> 
-                mon parcours
-            </div>
-            <!-- block qui permet de faire un tableaux avec mon parcour professionnel et ma formation-->
-            <div align="center">
-                <table class="tab_parcours" >
-                    <tr>
-                        <th class="style_tab_tete">Ma Formation</th>
-                        <th width="15%"></th>
-                        <th class="style_tab_tete">Mon Parcours professionnel </th>
-                    </tr>
-                    <tr><!-- ligne 1 de mon parcours-->
-                        <td class="style_tab tooltip">
-                            <div>depuis 2022 : Bachelor Universitaire de Technologie a l<a href="https://www.iutbeziers.fr/">'IUT Beziers</a>
-                                <span class="tooltiptext">durant ma formation a l'IUT Beziers, je vais passer mon Bachelor Universitaire de Technologie en Réseaux et Télécommunications.</span>
-                            </div>
-                        </td>
-                        <td></td> <!-- me permet de bien mettre mes ligne simon il le fait sur 1 colone-->
-                        <td class="style_tab tooltip">
-                            <div>2017 - 2020 : Arbitre de foot
-                                <span class="tooltiptext">Durant ces trois ans, j'ai arbitré plusieurs matchs dans différentes catégories (U13, U15, U16). Les matchs sont plus ou moins compliqués à arbitrer en fonction des
-                                    différentes équipes et il ne faut jamais se fier aux à prioris ou aux on-dits. Durant ces trois ans j'ai dû m'adapter aux différentes situations qui m'ont permit d'évoluer.</span>
-                            </div>  <!-- a voir pour avoir la même taille que les autre vus que c'est qu'un ligne     -->
-                        </td>
-                    </tr>
-                    <tr>  <!-- ligne 2 de mon parcours-->
-                        <td class="style_tab tooltip">
-                            <div>2021 - 2022 : Préparation Militaire Marine Jean Moulin Beziers
-                                <span class="tooltiptext">Durant cette Préparation Militaire Marine, j'ai appris la rigeur militaire, les principes de base de la Marine grâce a différents cours que j'ai reçu.
-                                    Avec les sorties faites, j'ai pu visiter différentes installations et batîments.</span>
-                            </div>
-                        </td> <!-- me permet de bien mettre mes ligne simon il le fait sur 1 colone-->
-                        <td></td>
-                        <!-- <td class="style_tab , tooltip"><div>en construction<span class="tooltiptext">en construction  en construction  en construction  en construction</span></div> </td> -->
-                        <!-- ligne ajout pour la suite-->
-                    </tr>
-                    <tr><!-- ligne 3 de mon parcours-->
-                        <td class="style_tab tooltip">
-                            <div>2019 - 2022 : baccalauréat général au <a href="https://jean-moulin-beziers.mon-ent-occitanie.fr/">lycée Jean Moulin Beziers</a>
-                                <span class="tooltiptext">Durant ces 3 ans au lycée, j'ai passé mon baccalauréat général avec comme spécialité Science de l'ingénieur et Numérique et Science de l'innformatique et
-                                    l'option Mathématique Complémentaire</span>
-                            </div>
-                        </td> <!-- me permet de bien mettre mes ligne simon il le fait sur 1 colone-->
-                        <td></td>
-                        <!-- <td class="style_tab , tooltip"><div>en construction<span class="tooltiptext">en construction  en construction  en construction  en construction</span></div> </td> -->
-                        <!-- ligne ajout pour la suite-->
-                    </tr>
-                </table>
-            <!-- fin de block de presentation de ma formation-->
-            </div> 
-        </div>
-            <div id="mes_projets">
-                <div class="project_title"> 
-                    Mes projets
+            
+            <div id="mon_parcours">
+                <div class="my_route_title"> 
+                    mon parcours
                 </div>
                 <!-- block qui permet de faire un tableaux avec mon parcour professionnel et ma formation-->
                 <div align="center">
                     <table class="tab_parcours" >
                         <tr>
-                            <th class="style_tab_tete">Mes projets durant ma formation</th>
+                            <th class="style_tab_tete">Ma Formation</th>
                             <th width="15%"></th>
-                            <th class="style_tab_tete">Mes projets professionels</th>
-                        </tr> 
-                        <tr><!-- ligne 1 de mes projet-->
-                            <td>
-                                <div class="project_name">
-                                    Mon Portfolio de présentation
-                                </div>
-                                <div class="text_for_the_presentation_of_my_project">
-                                    Mon Portfolio de présentation a été réalisé dans le cadre d'une mise en situation d'apprentissage et d'évaluation <i>(SAE)</i>
-                                    qui avait pour objectif de nous présenter sur internet. Ce projet a été réalisé principalement en HTML <i>(HyperText Markup Language)</i>
-                                    et en CSS <i>(Cascading Style Sheets)</i>
+                            <th class="style_tab_tete">Mon Parcours professionnel </th>
+                        </tr>
+                        <tr><!-- ligne 1 de mon parcours-->
+                            <td class="style_tab tooltip">
+                                <div>depuis 2022 : Bachelor Universitaire de Technologie a l<a href="https://www.iutbeziers.fr/">'IUT Beziers</a>
+                                    <span class="tooltiptext">durant ma formation a l'IUT Beziers, je vais passer mon Bachelor Universitaire de Technologie en Réseaux et Télécommunications.</span>
                                 </div>
                             </td>
                             <td></td> <!-- me permet de bien mettre mes ligne simon il le fait sur 1 colone-->
-                            <td>
-                                <div class="project_name">
-                                    arrivé dans le futur
-                                </div>
+                            <td class="style_tab tooltip">
+                                <div>2017 - 2020 : Arbitre de foot
+                                    <span class="tooltiptext">Durant ces trois ans, j'ai arbitré plusieurs matchs dans différentes catégories (U13, U15, U16). Les matchs sont plus ou moins compliqués à arbitrer en fonction des
+                                        différentes équipes et il ne faut jamais se fier aux à prioris ou aux on-dits. Durant ces trois ans j'ai dû m'adapter aux différentes situations qui m'ont permit d'évoluer.</span>
+                                </div>  <!-- a voir pour avoir la même taille que les autre vus que c'est qu'un ligne     -->
                             </td>
-                        </tr>       
+                        </tr>
+                        <tr>  <!-- ligne 2 de mon parcours-->
+                            <td class="style_tab tooltip">
+                                <div>2021 - 2022 : Préparation Militaire Marine Jean Moulin Beziers
+                                    <span class="tooltiptext">Durant cette Préparation Militaire Marine, j'ai appris la rigeur militaire, les principes de base de la Marine grâce a différents cours que j'ai reçu.
+                                        Avec les sorties faites, j'ai pu visiter différentes installations et batîments.</span>
+                                </div>
+                            </td> <!-- me permet de bien mettre mes ligne simon il le fait sur 1 colone-->
+                            <td></td>
+                            <!-- <td class="style_tab , tooltip"><div>en construction<span class="tooltiptext">en construction  en construction  en construction  en construction</span></div> </td> -->
+                            <!-- ligne ajout pour la suite-->
+                        </tr>
+                        <tr><!-- ligne 3 de mon parcours-->
+                            <td class="style_tab tooltip">
+                                <div>2019 - 2022 : baccalauréat général au <a href="https://jean-moulin-beziers.mon-ent-occitanie.fr/">lycée Jean Moulin Beziers</a>
+                                    <span class="tooltiptext">Durant ces 3 ans au lycée, j'ai passé mon baccalauréat général avec comme spécialité Science de l'ingénieur et Numérique et Science de l'innformatique et
+                                        l'option Mathématique Complémentaire</span>
+                                </div>
+                            </td> <!-- me permet de bien mettre mes ligne simon il le fait sur 1 colone-->
+                            <td></td>
+                            <!-- <td class="style_tab , tooltip"><div>en construction<span class="tooltiptext">en construction  en construction  en construction  en construction</span></div> </td> -->
+                            <!-- ligne ajout pour la suite-->
+                        </tr>
                     </table>
-                    <!-- fin de block de presentation de mes projet-->
+                <!-- fin de block de presentation de ma formation-->
+                </div> 
+            </div>
+                <div id="mes_projets">
+                    <div class="project_title"> 
+                        Mes projets
+                    </div>
+                    <!-- block qui permet de faire un tableaux avec mon parcour professionnel et ma formation-->
+                    <div align="center">
+                        <table class="tab_parcours" >
+                            <tr>
+                                <th class="style_tab_tete">Mes projets durant ma formation</th>
+                                <th width="15%"></th>
+                                <th class="style_tab_tete">Mes projets professionels</th>
+                            </tr> 
+                            <tr><!-- ligne 1 de mes projet-->
+                                <td>
+                                    <div class="project_name">
+                                        Mon Portfolio de présentation
+                                    </div>
+                                    <div class="text_for_the_presentation_of_my_project">
+                                        Mon Portfolio de présentation a été réalisé dans le cadre d'une mise en situation d'apprentissage et d'évaluation <i>(SAE)</i>
+                                        qui avait pour objectif de nous présenter sur internet. Ce projet a été réalisé principalement en HTML <i>(HyperText Markup Language)</i>
+                                        et en CSS <i>(Cascading Style Sheets)</i>
+                                    </div>
+                                </td>
+                                <td></td> <!-- me permet de bien mettre mes ligne simon il le fait sur 1 colone-->
+                                <td>
+                                    <div class="project_name">
+                                        arrivé dans le futur
+                                    </div>
+                                </td>
+                            </tr>       
+                        </table>
+                        <!-- fin de block de presentation de mes projet-->
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="me_contacter">
-            <div class="contact_me"> 
-                en construction
+            <div id="me_contacter">
+                <div class="contact_me"> 
+                    en construction
+                </div>
             </div>
-        </div>
-
+        </main>
     </body>
+
+    <script>
+        // When the user scrolls the page, execute watchNavBar
+        window.onscroll = function() {watchNavBar()};
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function watchNavBar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky", "barnav_sticky");
+            } else {
+                navbar.classList.remove("sticky", "barnav_sticky");
+            }
+        }
+    </script>
 </html>
