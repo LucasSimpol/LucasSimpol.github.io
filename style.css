@@ -94,12 +94,12 @@ a:hover {
 
 /* parti présentation de mes projet */
 
-.my_project {
+#mes_projets {
     background-color: bisque;
     font-family: "Calibri";
 }
 
-.Project_title {
+.project_title {
     text-align: center;
     font-size: 2%;
     font-weight:bolder;
@@ -108,7 +108,7 @@ a:hover {
     font-size: 200%;
 }
 
-.Project_Name {
+.project_name {
     text-align: center;
     font-size: 2%;
     font-weight:bolder;
@@ -143,7 +143,7 @@ a:hover {
     width: 70%;
     height: fit-content;
 }
-.style_tab_tête{
+.style_tab_tete{
     background-color:rgb(255, 199, 131);
     border-style: outset; 
     padding-top: 1%;
@@ -171,6 +171,7 @@ a:hover {
 
 
 /*Pourquoi ce block en dessous ? Une future tentative ?    Oui, elle permet de rende la bar de navigation fixe en haut d'écran mais il faut que je regarde plus en profondeur car le permier test ne ma pas plus*/
+/*Ok, d'accord*/
 /*  
     position: fixed;
     top: 0;
