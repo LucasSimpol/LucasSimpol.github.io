@@ -59,7 +59,22 @@ a:hover {
 .barnav_elem_right_bordered {
     border-radius: 0px 25px 25px 0px;
 }
+.barnav_sticky {
+    background-color: inherit;
+    display: flex;
+    font-size: 150%;
+    z-index: 99;
+}
 
+.sticky + #content {
+    padding-top: 60px;
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 98.65%;
+}
 
 .text_about_myself {
     text-align: center;
