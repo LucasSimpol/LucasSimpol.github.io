@@ -1,14 +1,3 @@
 on:
   pull_request:
     types: [opened, reopened]
-jobs:
-  test:
-    name: Deploy PR
-    uses: AnandChowdhary/deploy-pr-action@v1.5.0
-    with:
-      # GitHub token
-      token: ${{DEPLOY_PR_SECRET}}
-      # Prefix in deployment URL
-      prefix: pull-request
-      # Directory to deploy
-      distDir: public
