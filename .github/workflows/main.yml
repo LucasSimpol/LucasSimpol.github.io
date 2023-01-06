@@ -2,7 +2,7 @@
   uses: AnandChowdhary/deploy-pr-action@v1.5.0
   with:
     # GitHub token
-    token: ${{deploy-pr-secret}}
+    token: ${{DEPLOY_PR_SECRET}}
     # Prefix in deployment URL
     prefix: pull-request
     # Path to create robots.txt in
