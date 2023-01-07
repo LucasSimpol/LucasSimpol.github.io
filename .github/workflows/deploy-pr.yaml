@@ -1,32 +1,50 @@
+name: Deploy PR Previews
 on:
+  # The advantage of 'pull_request' over 'pull_request_target' is that we
+  # can make changes to this file and test them in a pull request, instead
+  # of relying on landing it in 'main' first.
+  # From a security point of view, its arguably safer this way because
+  # unlike 'pull_request_target', these only have secrets if the pull
+  # request creator has permission to access secrets.
   pull_request:
-    types: [opened, reopened]
+
+permissions:
+  contents: read
+  deployments: write
+
+# This allows one deploy workflow to interrupt another
+concurrency:
+  group: 'preview-env @ ${{ github.head_ref || github.run_id }} for ${{ github.event.number || github.event.inputs.PR_NUMBER }}'
+  cancel-in-progress: true
 
 jobs:
-  deploy_pr_env:
-    name: Deploy PR
-    run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }}
-    # You may pin to the exact commit or the version.
-    # uses: AnandChowdhary/deploy-pr-action@2b343d8602fe72b0de67d6a4d754b688c2ef5013
-    uses: AnandChowdhary/deploy-pr-action@v1.5.0
-    with:
-      # GitHub token
-      token: # optional
-      # Prefix in deployment URL
-      prefix: # optional
-      # Path to create robots.txt in
-      robotsTxtPath: # optional
-      # Directory to deploy
-      distDir: 
-      # Content for robots.txt file
-      robotsContent: # optional
-      # Name of the deployment environment
-      environmentName: # optional
-      # Skip adding the URL comment on PRs
-      skipComment: # optional
-      # Skip adding labels to PRs
-      skipLabels: # optional
-      # Labels to add to PRs
-      labels: # optional
-      # Fail status check if a deploy error occurs
-      failOnDeployError: # optional
+  build-and-deploy-pr-preview:
+    name: Build and deploy Pull Request preview environment
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy PR
+  # You may pin to the exact commit or the version.
+  # uses: AnandChowdhary/deploy-pr-action@2b343d8602fe72b0de67d6a4d754b688c2ef5013
+  uses: AnandChowdhary/deploy-pr-action@v1.5.0
+  with:
+    # GitHub token
+    token: # optional
+    # Prefix in deployment URL
+    prefix: # optional
+    # Path to create robots.txt in
+    robotsTxtPath: # optional
+    # Directory to deploy
+    distDir:  public
+    # Content for robots.txt file
+    robotsContent: # optional
+    # Name of the deployment environment
+    environmentName: # optional
+    # Skip adding the URL comment on PRs
+    skipComment: # optional
+    # Skip adding labels to PRs
+    skipLabels: # optional
+    # Labels to add to PRs
+    labels: # optional
+    # Fail status check if a deploy error occurs
+    failOnDeployError: # optional
