@@ -109,7 +109,7 @@ a:hover {
 
 /* parti présentation de mes projet */
 
-#mes_projets {
+#my_projets {
     background-color: bisque;
     font-family: "Calibri";
 }
@@ -136,7 +136,18 @@ a:hover {
     padding-top: 5%;
     
 }
+.fondu img
+{
+    transition: opacity 2s linear;
+    opacity:0;
+}
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+    transition: opacity 2s linear;
 
+}
 
 /* fin de la parti présentation de mes projet */
 
@@ -182,18 +193,6 @@ a:hover {
 }
 
 /* fin du Css pour le block de presentation de mon parcours professionnel de ma formation */
-
-
-
-/*Pourquoi ce block en dessous ? Une future tentative ?    Oui, elle permet de rende la bar de navigation fixe en haut d'écran mais il faut que je regarde plus en profondeur car le permier test ne ma pas plus*/
-/*Ok, d'accord*/
-/*  
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-    bar de nav fix en haut de page
-*/
 
 
 
