@@ -250,14 +250,17 @@ a:hover {
 
 
 
-/* test caroule image 
+/* carousel d'image */
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
   }
-  
+
+.slideshow-container:active img {
+    transform: scale(2);
+  }
   /* Caption text */
   .text {
     color: #f2f2f2;
@@ -309,3 +312,4 @@ a:hover {
     .text {font-size: 11px}
   }
   
+  /* fin carousel image */ 
