@@ -116,7 +116,22 @@
                                 <div class="text_for_the_presentation_of_my_project">
                                     Mon Portfolio de présentation a été réalisé dans le cadre d'une mise en situation d'apprentissage et d'évaluation <i>(SAE)</i>
                                     qui avait pour objectif de nous présenter sur internet. Ce projet a été réalisé principalement en HTML <i>(HyperText Markup Language)</i>
-                                    et en CSS <i>(Cascading Style Sheets)</i><br>  
+                                    et en CSS <i>(Cascading Style Sheets)</i><br><br>
+                                    <div>
+                                        <div class="slideshow-container">
+                                            <div class="mySlides fade">
+                                                <img src="image/image_css.png" style="width:50%">
+                                            </div>
+
+                                            <div class="mySlides fade">
+                                                <img src="image/image_html.png" style="width:50%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align:center">
+                                        <span class="dot"></span> 
+                                        <span class="dot"></span> 
+                                    </div>
                                 </div>
                             </td>
                             <td></td> <!-- me permet de bien mettre mes ligne simon il le fait sur 1 colone-->
@@ -157,5 +172,26 @@
                 navbar.classList.remove("sticky", "barnav_sticky");
             }
         }
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 10000); // Change image every 2 seconds
+        }
+
     </script>
 </html>
