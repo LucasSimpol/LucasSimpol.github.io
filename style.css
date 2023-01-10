@@ -259,7 +259,7 @@ a:hover {
   }
 
 .slideshow-container:active img {
-    transform: scale(2);
+    transform: scale(1,5);
   }
   /* Caption text */
   .text {
