@@ -42,7 +42,7 @@ a:hover {
     font-weight:bolder;
     text-decoration: underline;
     padding-top: 2%;
-    font-size: 200%;
+    font-size: 175%;
     font-family: "Calibri"
 }
 
@@ -97,15 +97,16 @@ a:hover {
 
 .text_about_my_skills {
     text-align: center;
-    font-size: large;
     background-color: bisque;
     font-family: "Calibri";
-    padding-top: 10%;
-    padding-bottom: 10%;
+    
 }
 
-#mon_parcours {
-    background-color: white;
+.tab_my_skills {
+    padding: 2% 2% 5% 2%;
+    text-align: center;
+    width: 75%;
+    height: fit-content;
     font-family: "Calibri";
 
 }
@@ -156,8 +157,6 @@ a:hover {
     text-align: center;
     width: 70%;
     height: fit-content;
-    
-    
 }
 
 /* Css pour le block de presantation de mon parcours profésionnel de ma formation */
@@ -166,6 +165,7 @@ a:hover {
     text-align: center;
     width: 70%;
     height: fit-content;
+    font-family: "Calibri";
 }
 .style_tab_tete{
     background-color:rgb(255, 199, 131);
@@ -311,3 +311,10 @@ a:hover {
   }
   
   /* fin carousel image */ 
+
+
+.pied_de_page{
+    background-color: bisque;
+    text-align: center;
+    font-family: "calibri";
+}
